@@ -1,7 +1,7 @@
 def file_name(file_dir):
-    L=[]
+    List_file=[]
     for root, dirs, files in os.walk(file_dir):
         for file in files:
             if os.path.splitext(file)[1] == '.wav':
-                    L.append(os.path.join(root, file))
-    return L
+                    List_file.append(os.path.join(root, file))
+    return List_file
